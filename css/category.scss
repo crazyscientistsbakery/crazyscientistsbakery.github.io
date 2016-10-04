@@ -1,0 +1,21 @@
+---
+---
+body {
+    background-color: tomato;
+}
+
+#main {
+    width: 50%;
+    margin: 5em auto;
+}
+
+.section {
+    background: #eee;
+    padding: 3em;
+    margin: 1em 0;
+    width: 100%;
+
+    img  {
+        max-width: 100%;
+    }
+}

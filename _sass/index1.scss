@@ -1,0 +1,68 @@
+@import "circle";
+@import "index";
+@import 'https://fonts.googleapis.com/css?family=Lobster|Lato:900';
+
+.main-circle {
+    $main-diameter: 30em;
+    $main-i-diameter: 11em;
+    $sub-diameter: 16em;
+    $sub-i-diameter: 8em;
+    @include on-circle($item-count: 5, $circle-size: $main-diameter, $item-size: $main-i-diameter);
+    position: absolute;
+    bottom: 30vh;
+    right: 0;
+    margin: 8em;
+
+    li  {
+        position: absolute;
+    }
+
+    #center {
+        position: absolute;
+        top: $main-diameter / 2;
+        left: $main-diameter / 2;
+    }
+
+    li > div {
+        font-family: Lato;
+        font-weight: 900;
+        line-height: 11 * 14px;  //11em in the .main--circle em size
+        font-size: 20px;
+        color: white;
+
+        border: 4px solid white;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        transition: 0.25s ease-in-out;
+        text-align: center;
+        
+        .subcircle {
+            @include on-circle($item-count: 3, $circle-size: $sub-diameter, $item-size: $sub-i-diameter);
+            font-size: 14px;
+            transition: 0.25s ease-in-out;
+            position: absolute;
+            top: 0;
+            transform: translate(-2.5em, -2.5em);
+
+            div {
+                font-size: 14px;
+                line-height: 8em;
+                transform: scale(0);
+                border-radius: 100%;
+            }
+        }
+    }
+
+    li > div:hover {
+        transform: scale(1.25);
+        .subcircle div {
+            transform: scale(1);
+
+        }
+        .subcircle div:hover {
+            transform: scale(1.25);
+        }
+
+    }
+}
