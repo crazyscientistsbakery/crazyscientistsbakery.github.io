@@ -1,6 +1,18 @@
+---
+---
 @import "circle";
-@import "index";
+@import "main";
 @import 'https://fonts.googleapis.com/css?family=Lobster|Lato:900';
+
+a {
+    color: white;
+}
+
+div:hover a {
+    color: white;
+    text-decoration: none;
+    
+}
 
 .main-circle {
     $main-diameter: 30em;
@@ -58,11 +70,46 @@
         transform: scale(1.25);
         .subcircle div {
             transform: scale(1);
-
         }
         .subcircle div:hover {
             transform: scale(1.25);
         }
 
+    }
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.pages {
+    width: 100vw;
+    height: 100vh; 
+}
+
+.pages::before {
+  clear: both;
+  content: "";
+  display: table;
+  margin-top: -1px;
+  height: 0;
+}
+
+.pages#main {
+    height: 70vh;
+    background: url(/assets/food_bg_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    h1  {
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-family: 'Lobster', cursive;
+        font-size: 8em;
+        color: #000;
+        text-shadow: -3px 0 #eee, 0 3px #eee, 3px 0 #eee, 0 -3px #eee;
     }
 }

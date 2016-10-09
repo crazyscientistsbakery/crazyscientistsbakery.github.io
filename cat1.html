@@ -1,0 +1,75 @@
+---
+layout: category
+---
+<link rel="stylesheet" href="/css/category.css">
+<script src="js/cat.js"></script>
+<div id="main">
+  <nav id="navbar-top" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{ site.title }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input id="search" type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+  <div class="jumbotron">
+    <div class="panel card">
+      <h1>Articles</h1>
+      <nav>
+        <h3>Filter categories:</h3>
+        <div class="container-fluid">
+          <div class="btn-group">
+            <button type=button onclick="toggleAll(this)" class="science btn-group-head btn btn-default">Science</button>
+            <button type=button onclick="toggleAll(this)" class="chemistry btn btn-default">Chemistry</button>
+            <button type=button onclick="toggleAll(this)" class="physics btn btn-default">Physics</button>
+            <button type=button onclick="toggleAll(this)" class="biology btn btn-default">Biology</button>
+          </div>
+          <button type=button onclick="toggleAll(this)" class="world btn btn-default">World</button>
+          <button type=button onclick="toggleAll(this)" class="nutrition btn btn-default">Nutrition</button>
+          <button type=button onclick="toggleAll(this)" class="history btn btn-default">History</button>
+          <button type=button onclick="toggleAll(this)" class="design btn btn-default">Design</button>
+          <!-- Split button -->
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid" id="article-container">
+      <div class="grid">
+        {% for post in site.posts %}
+          <div class="panel card post {{ post.cat }}">
+            <h1>{{ post.title }}</h1>
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/search.js"></script>

@@ -1,6 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 
 // Our variables
@@ -9,6 +6,7 @@ $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$big-font-size:  $base-font-size * 1.125;
 
 $spacing-unit:     30px;
 
@@ -37,3 +35,34 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+@import "bootstrap";
+
+$science: #ee4035;
+$design: #f37736;
+$nutrition: #fcec4d;
+$history: #7bc043;
+$world: #0392cf;
+
+.science, .biology, .physics, .chemistry {
+    background: $science;
+}
+.design {
+    background: $design;
+}
+.nutrition {
+    background: $nutrition;
+}
+.history {
+    background: $history;
+}
+.world {
+    background: $world;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-visible {
+    display: "";
+}
