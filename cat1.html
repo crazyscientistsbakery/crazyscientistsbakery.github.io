@@ -63,9 +63,11 @@ layout: category
     <div class="container-fluid" id="article-container">
       <div class="grid">
         {% for post in site.posts %}
-          <div class="panel card post {{ post.cat }}">
-            <h1>{{ post.title }}</h1>
-            {{ post.excerpt }}
+          <div class="post-wrapper">
+            <div class="panel card post {{ post.cat }}">
+              <h1>{{ post.title }}</h1>
+              {{ post.excerpt }}
+            </div>
           </div>
         {% endfor %}
       </div>

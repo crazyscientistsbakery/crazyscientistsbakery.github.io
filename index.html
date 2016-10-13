@@ -6,33 +6,52 @@
   <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-  <div id="main" class="pages">
-    <ul class="main-circle">
-      <li><div><a href="cat1.html#world"?><div>WORLD</div></a></div></li>
-      <li><div><a href="cat1.html#history"?><div>HISTORY</div></a></div></li>
-      <li><div><a href="cat1.html#nutrition"?><div>NUTRITION</div></a></div></li>
-      <li id=science>
-        <div>
-          <a href="cat1.html#science"?><div>SCIENCE</div></a>
-          <ul class=subcircle>
-            <li><div><a href="cat1.html#chemistry"?><div>CHEMISTRY</div></a></div></li>
-            <li><div><a href="cat1.html#physics"?><div>PHISYCS</div></a></div></li>
-            <li><div><a href="cat1.html#biology"?><div>BIOLOGY</div></a></div></li>
-          </ul>
+  <div class="jumbotron">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">{{ site.title }}</a>
         </div>
-      </li>
-      <li><div><a href="cat1.html#design"?><div>DESIGN</div></a></div></li>
-      <li id=center><div><a href="cat1.html"?><div>ALL</div></a></div></li>
-    </ul>
-    <h1>Food study</h1>
-  </div>
-  <div class="pages">
-    <div id="square-container">
-      <div class="square">
-      </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">ALL <span class="sr-only">(current)</span></a></li>
+            <li><a href="cat1.html#world">WORLD</a></li>
+            <li><a href="cat1.html#design">DESIGN</a></li>
+            <li><a href="cat1.html#history">HISTORY</a></li>
+            <li><a href="cat1.html#nutrition">NUTRITION</a></li>
+            <li class="dropdown">
+              <a id="science-drop" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SCIENCE <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="science-drop">
+                <li><a href="cat1.html#chemistry">CHEMISTRY</a></li>
+                <li><a href="cat1.html#physics">PHYSICS</a></li>
+                <li><a href="cat1.html#biology">BIOLOGY</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group" id="search">
+              <img src="assets/icons/ic_search_white_24px.svg" alt="">
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <h1>Fooo
+      <span class="glyphicons glyphicons-search"></span></h1>
     </div>
   </div>
 </body>
-<div class="pages">
+<div class="container">
 </div>
 </html>

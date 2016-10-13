@@ -11,7 +11,6 @@ a {
 div:hover a {
     color: white;
     text-decoration: none;
-    
 }
 
 .main-circle {
@@ -111,5 +110,52 @@ body {
         font-size: 8em;
         color: #000;
         text-shadow: -3px 0 #eee, 0 3px #eee, 3px 0 #eee, 0 -3px #eee;
+    }
+}
+
+.jumbotron {
+    height: 70vh;
+    background: url(/assets/food_bg_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 0;
+
+    .container h1  {
+        display: inline-block;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-family: 'Lobster', cursive;
+        font-size: 8em;
+        color: white;
+    }
+
+    nav.navbar  {
+        margin-top: 0px;
+        background: transparent;
+        border: none;
+        *  {
+            font-family: $menu-font;
+            letter-spacing: 0.3em;
+        }
+
+        #search  {
+            input {
+                background: transparent;
+                border: none;
+                border-bottom: 3px solid white;
+                box-sizing: border-box;
+                color: white;
+                letter-spacing: normal;
+            }
+
+            img {
+                margin-bottom: -9px;
+            }
+        }
+
+        div > div > *, div > div > ul > li > a {
+            color: white;
+        }
     }
 }

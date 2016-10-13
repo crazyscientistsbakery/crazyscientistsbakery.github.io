@@ -5,25 +5,27 @@ function redraw() {
     }
     console.log("redraw");
 
-    var posts = document.querySelectorAll(".post");
+    var posts = document.querySelectorAll(".post-wrapper");
     var cur, i;
     var acc = 12, tval = 0;
     for(i = 0; i < posts.length; i++) {
         cur = posts[i];
-        if (acc == 12) {
+        if (cur.style.display === "none") continue;
+        if (acc % 12 === 0) { 
+            acc = 12;
             tval = choose([12, 6, 4]);
+            acc -= tval;
         } else {
             tval = acc;
             acc = 12;
         }
-
+        console.log(acc, tval);
         cl = [].filter.call(cur.classList, function (el) {
             return el.indexOf("col-md") === -1;
         });
         cur.className = cl.join(' ');
         cur.className += " col-md-" + tval;
 
-        acc = acc - tval;
     }
 }
 
