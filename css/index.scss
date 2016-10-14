@@ -80,6 +80,8 @@ div:hover a {
 
 body {
     overflow-x: hidden;
+    background: url(/assets/food_bg_1.jpg) no-repeat center center fixed;
+
 }
 
 .pages {
@@ -113,18 +115,23 @@ body {
     }
 }
 
-.jumbotron {
-    height: 70vh;
-    background: url(/assets/food_bg_1.jpg) no-repeat center center fixed;
+#jumbo{
+    position: relative;
+    *  {
+        border: none;
+    }
+    height: 40vh;
+    background-color: transparent;
     background-size: cover;
     padding-top: 0;
 
     .container h1  {
         display: inline-block;
         position: absolute;
-        top: 30%;
-        left: 30%;
-        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 1em;
+
+        transform: translateY(-50%);
         font-family: 'Lobster', cursive;
         font-size: 8em;
         color: white;
@@ -158,4 +165,125 @@ body {
             color: white;
         }
     }
+}
+
+#newsgrid {
+    width: 60%;
+    margin: 3%;
+    margin-bottom: 0;
+    float: left;
+    > .mywrapper  {
+        margin-top: 1em;
+        max-width: none;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        .mywrapper  {
+            padding-bottom: 25%;
+            position: relative;
+            width: 24%;
+        }
+
+        .hwrapper  {
+            width: 100%;
+            height: 100%;
+        }
+
+        .resize {
+            // font-size: 300px;
+        }
+
+        &:first-child  {
+            margin-top: 0;
+            padding-bottom: 9% / 21 * 100;
+            position: relative;
+
+            .post {
+                padding: 4em;
+                h1  {
+                    font-size: 4em;
+                }
+                p  {
+                    position: absolute;
+                    bottom: 3em;
+                    width: 40%;
+                }
+            }
+        }
+
+        .post {
+            color: black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+
+            // white-space: nowrap;
+            &:hover  {
+                transition: all 0.3s linear;
+                opacity: 0.8;
+            }
+
+            overflow: hidden;
+        }
+        .pwrapper  {
+            display: none;
+            position: absolute;
+            top: 4em + 4em;
+            bottom: 3em;
+            overflow: hidden;
+        }
+        .ellipsis {
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(transparent, tomato, tomato, tomato);
+            width: 100%;
+            height: 3em;
+            line-height: 4em;
+        }
+    }
+    .post {
+        background: tomato;
+        // box-sizing: border-box;
+    }
+        
+}
+
+#description {
+    background-color: #fff;
+    float: left;
+    clear: both;
+    padding: 3em;
+    width: 60%;
+    margin: 3%;
+}
+
+nav#links {
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 3%;
+    float: right;
+    > div {
+        background-color: #fff;
+        padding: 2em;
+        margin-bottom: 5em;
+        &:first-child  {
+            overflow: auto;
+            img {
+                float: left;
+                 width: 30%;
+                 margin-right: 3em;
+            }
+        }
+    }
+}
+
+.site-footer {
+    @extend .card;
+    background-color: #fff;
+    margin: 0 3%;
+    clear: both;
 }

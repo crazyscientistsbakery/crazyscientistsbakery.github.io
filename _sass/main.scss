@@ -67,3 +67,14 @@ $world: #0392cf;
 .is-visible {
     display: "";
 }
+
+.post {
+    h1  {
+        font-size: 30px;
+    }
+    padding: 1.5em;
+}
+
+.card {
+    box-shadow: 0 0 30px 0px  #222;   
+}
