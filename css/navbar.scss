@@ -1,0 +1,30 @@
+---
+---
+nav.navbar  {
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    *  {
+        font-family: Lato;
+        letter-spacing: 0.3em;
+    }
+
+    #search  {
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid white;
+            box-sizing: border-box;
+            color: white;
+            letter-spacing: normal;
+        }
+
+        img {
+            margin-bottom: -9px;
+        }
+    }
+
+    div > div > *, div > div > ul > li > a {
+        color: white;
+    }
+}
