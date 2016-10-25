@@ -29,10 +29,12 @@ layout: category
       <div class="grid">
         {% for post in site.posts %}
           <div class="post-wrapper">
-            <div class="panel card post {{ post.cat }}">
-              <h1>{{ post.title }}</h1>
-              {{ post.excerpt }}
-            </div>
+            <a href="{{ post.url }}">
+              <div class="panel card post {{ post.cat }} col-sm-12">
+                <h1>{{ post.title }}</h1>
+                {{ post.excerpt }}
+              </div>
+            </a>
           </div>
         {% endfor %}
       </div>

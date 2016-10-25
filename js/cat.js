@@ -74,6 +74,7 @@ function toggleAll (elem) {
 }
 
 window.onload = function() {
+    return;
     if (window.location.hash) {
         var hash = window.location.hash.split('#');
         var flag = false;

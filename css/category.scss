@@ -46,4 +46,12 @@ div.jumbotron {
         margin: 0;
         margin-bottom: 0.5em;
     }
+    a {
+        color: #000;
+
+        &:hover {
+            transition: all 0.2s linear;
+            opacity: 0.9;
+        }
+    }
 }
