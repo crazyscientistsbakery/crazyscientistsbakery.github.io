@@ -8,9 +8,13 @@ a {
     color: white;
 }
 
-div:hover a {
+div:hover > a {
     color: white;
     text-decoration: none;
+}
+
+nav.navbar a {
+    color: white;
 }
 
 .main-circle {
@@ -139,59 +143,107 @@ body {
 
 }
 
+.wrapper {
+    // float: left;
+}
 #newsgrid {
-    width: 60%;
-    margin: 3%;
-    margin-bottom: 0;
-    float: left;
-    > .mywrapper  {
-        margin-top: 1em;
-        max-width: none;
-        width: 100%;
+    // width: 60%;
+    // margin: 3%;
+    // margin-bottom: 0;
+    // float: left;
+    // > .mywrapper  {
+    //     margin-top: 1em;
+    //     max-width: none;
+    //     width: 100%;
+    //
+    //     display: flex;
+    //     justify-content: space-between;
+    //     .mywrapper  {
+    //         padding-bottom: 25%;
+    //         position: relative;
+    //         width: 24%;
+    //     }
+    //
+    //     .hwrapper  {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    //
+    //     .resize {
+    //         // font-size: 300px;
+    //     }
+    //
+    //     &:first-child  {
+    //         margin-top: 0;
+    //         padding-bottom: 9% / 21 * 100;
+    //         position: relative;
+    //
+    //         .post {
+    //             padding: 4em;
+    //             h1  {
+    //                 font-size: 4em;
+    //             }
+    //             p  {
+    //                 position: absolute;
+    //                 bottom: 3em;
+    //                 width: 40%;
+    //             }
+    //         }
+    //     }
+    //
+    //     .ellipsis {
+    //         position: absolute;
+    //         bottom: 0;
+    //         background: linear-gradient(transparent, tomato, tomato, tomato);
+    //         width: 100%;
+    //         height: 3em;
+    //         line-height: 4em;
+    //     }
+    // }
+    // .post {
+    //     background: tomato;
+    //     // box-sizing: border-box;
+    // }
+    .row {
+        padding: 0 1em;
 
-        display: flex;
-        justify-content: space-between;
-        .mywrapper  {
-            padding-bottom: 25%;
-            position: relative;
-            width: 24%;
-        }
-
-        .hwrapper  {
-            width: 100%;
-            height: 100%;
-        }
-
-        .resize {
-            // font-size: 300px;
-        }
-
-        &:first-child  {
-            margin-top: 0;
-            padding-bottom: 9% / 21 * 100;
-            position: relative;
+        &:first-child {
+            padding-top: 0;
+            .mywrapper  {
+                position: relative;
+                padding-bottom: 52%;
+            }
 
             .post {
-                padding: 4em;
-                h1  {
-                    font-size: 4em;
-                }
-                p  {
-                    position: absolute;
-                    bottom: 3em;
-                    width: 40%;
-                }
+                margin: 0;
             }
         }
 
+        &:nth-child(2) {
+            margin: 0 -1em;
+            .mywrapper {
+                padding-bottom: 25%;
+                // margin-right: -1em;
+                .pwrapper  {
+                    display: none;
+                    position: absolute;
+                    top: 4em + 4em;
+                    bottom: 3em;
+                    overflow: hidden;
+                }
+                    // position: relative;
+            }
+        }
         .post {
+            background-color: #fff;
             color: black;
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 0;
-            right: 0;
+            left: 0.5em;
+            right: 0.5em;
             width: auto;
+            margin-top: 1em;
 
             // white-space: nowrap;
             &:hover  {
@@ -200,44 +252,34 @@ body {
             }
 
             overflow: hidden;
-        }
-        .pwrapper  {
-            display: none;
-            position: absolute;
-            top: 4em + 4em;
-            bottom: 3em;
-            overflow: hidden;
-        }
-        .ellipsis {
-            position: absolute;
-            bottom: 0;
-            background: linear-gradient(transparent, tomato, tomato, tomato);
-            width: 100%;
-            height: 3em;
-            line-height: 4em;
+            .hwrapper  {
+                text-align: center;
+                width: 100%;
+                height: 100%;
+            }
+            @media screen and (max-width: $screen-xs-max) {
+                .hwrapper  {
+                    height: 50%;
+                    margin-top: 0.5em;
+                }
+            }
         }
     }
-    .post {
-        background: tomato;
-        // box-sizing: border-box;
-    }
-        
+
 }
 
 #description {
     background-color: #fff;
-    float: left;
-    clear: both;
     padding: 3em;
-    width: 60%;
-    margin: 3%;
+    // width: 100%;
+    margin: 2em 0.5em;
 }
 
 nav#links {
-    width: 30%;
-    margin-right: 3%;
-    margin-top: 3%;
-    float: right;
+    // width: 30%;
+    // margin-right: 3%;
+    // margin-top: 3%;
+    // float: right;
     > div {
         background-color: #fff;
         padding: 2em;

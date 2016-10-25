@@ -24,7 +24,13 @@ nav.navbar  {
         }
     }
 
-    div > div > *, div > div > ul > li > a {
-        color: white;
+    a {
+        color: #e5e5e5;
     }
+    
+    a:hover  {
+        background: transparent;
+        color: #fff;
+    }
+
 }
