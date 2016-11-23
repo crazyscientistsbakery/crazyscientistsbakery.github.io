@@ -3,6 +3,8 @@ layout: category
 ---
 <link rel="stylesheet" href="/css/category.css">
 <script src="js/cat.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
 <div id="main">
   {% include h_navbar.html %}
   <div class="jumbotron">
@@ -17,10 +19,18 @@ layout: category
             <button type=button onclick="toggleAll(this)" class="physics btn btn-default">Physics</button>
             <button type=button onclick="toggleAll(this)" class="biology btn btn-default">Biology</button>
           </div>
-          <button type=button onclick="toggleAll(this)" class="world btn btn-default">World</button>
-          <button type=button onclick="toggleAll(this)" class="nutrition btn btn-default">Nutrition</button>
-          <button type=button onclick="toggleAll(this)" class="history btn btn-default">History</button>
-          <button type=button onclick="toggleAll(this)" class="design btn btn-default">Design</button>
+          <!-- <button type=button onclick="toggleAll(this)" data&#45;toggle="button" aria&#45;pressed="false" class="world btn btn&#45;default">World</button> -->
+          <!-- <button type=button onclick="toggleAll(this)" data&#45;toggle="button" aria&#45;pressed="false" class="nutrition btn btn&#45;default">Nutrition</button> -->
+          <!-- <button type=button onclick="toggleAll(this)" data&#45;toggle="button" aria&#45;pressed="false" class="history btn btn&#45;default">History</button> -->
+          <!-- <button type=button onclick="toggleAll(this)" data&#45;toggle="button" aria&#45;pressed="false" class="design btn btn&#45;default">Design</button> -->
+          <div class="btn-group btn-group-divide" data-toggle="buttons">
+            <label class="btn btn-primary btn-lg">
+              <input type="checkbox" autocomplete="off"> Checkbox 2
+            </label>
+            <label class="btn btn-primary btn-lg">
+              <input type="checkbox" autocomplete="off"> Checkbox 2
+            </label>
+          </div>
           <!-- Split button -->
         </div>
       </nav>

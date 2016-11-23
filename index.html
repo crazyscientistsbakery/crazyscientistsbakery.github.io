@@ -34,7 +34,7 @@
           </div>
           <div class="row">
             {% for post in site.posts offset: 0 limit: 4 %}
-                <a href="{{ post.url }}" class="mywrapper col-md-3 col-sm-6 col-xs-12">
+              <a href="{{ post.url }}" class="mywrapper col-md-3 col-sm-6 col-xs-12">
                   <div class="post card" style="background-image: url('{{ post.img }}') no-repeat center center">
                     <div class="hwrapper resize">
                       {{ post.title }}
@@ -48,6 +48,13 @@
                   </div>
                 </a>
             {% endfor %}
+            <a href="/cat1.html" class="mywrapper hidden-md hidden-lg col-md-3 col-sm-6 col-xs-12">
+              <div class="post card" id="moreposts">
+                <div class="hwrapper resize">
+                  all the posts...
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <div id="description" class="card">

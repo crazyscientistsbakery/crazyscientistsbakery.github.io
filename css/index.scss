@@ -141,6 +141,13 @@ body {
         color: white;
     }
 
+    @media screen and (max-width: $screen-sm-max) {
+        .container h1  {
+            margin: auto auto;
+            left: auto;
+        }
+    }
+
 }
 
 .wrapper {
@@ -298,6 +305,6 @@ nav#links {
 .site-footer {
     @extend .card;
     background-color: #fff;
-    margin: 0 3%;
+    margin: 0 22px;
     clear: both;
 }

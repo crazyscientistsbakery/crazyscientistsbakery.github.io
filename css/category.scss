@@ -41,6 +41,13 @@ div.jumbotron {
     .container-fluid {
         padding: 0;
         position: relative;
+
+        .btn-group-divide .btn.btn-lg {
+            margin-right: 0.5em;
+            padding: 1em 1.5em;
+            border-radius: 3px;
+            color: black;
+        }
     }
     > h1 {
         margin: 0;
