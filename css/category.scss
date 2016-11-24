@@ -60,5 +60,10 @@ div.jumbotron {
             transition: all 0.2s linear;
             opacity: 0.9;
         }
+        
+        div.panel  {
+            height: 17em;
+            overflow: hidden;
+        }
     }
 }

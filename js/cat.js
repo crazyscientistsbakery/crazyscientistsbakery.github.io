@@ -10,16 +10,15 @@ function redraw() {
     var acc = 12, tval = 0;
     for(i = 0; i < posts.length; i++) {
         cur = posts[i];
+        console.log(acc, tval);
         if (cur.style.display === "none") continue;
-        if (acc % 12 === 0) { 
-            acc = 12;
+        if (acc === 12) { 
             tval = choose([12, 6, 4]);
             acc -= tval;
         } else {
             tval = acc;
             acc = 12;
         }
-        console.log(acc, tval);
         cl = [].filter.call(cur.classList, function (el) {
             return el.indexOf("col-md") === -1;
         });
@@ -41,12 +40,10 @@ function toggle (elem) {
 }
 
 function toggleAll (elem) {
-    console.log("foo");
     if (typeof elem === "string")
         classname = elem
     else
         classname = elem.className.split(" ")[0];
-    console.log("toggleall, ", classname);
     elems = document.getElementById("article-container").getElementsByClassName(classname);
     for (i = 0; i < elems.length; i++) {
         toggle(elems[i]);
@@ -61,7 +58,6 @@ function toggleAll (elem) {
             childs = btn.parentNode.childNodes;
             childs.forEach(function (el) {
                 if (el.nodeType === 1 && el.classList.contains('btn') && ! el.classList.contains('btn-group-head')) {
-                    console.log(el);
                     if (!el.style.display) 
                         el.style.display = 'none';
                     if (! el.style.opacity)
@@ -76,7 +72,6 @@ function toggleAll (elem) {
 }
 
 window.onload = function() {
-    return;
     if (window.location.hash) {
         var hash = window.location.hash.split('#');
         var flag = false;
