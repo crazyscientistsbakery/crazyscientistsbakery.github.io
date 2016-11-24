@@ -41,10 +41,12 @@ function toggle (elem) {
 }
 
 function toggleAll (elem) {
+    console.log("foo");
     if (typeof elem === "string")
         classname = elem
     else
         classname = elem.className.split(" ")[0];
+    console.log("toggleall, ", classname);
     elems = document.getElementById("article-container").getElementsByClassName(classname);
     for (i = 0; i < elems.length; i++) {
         toggle(elems[i]);
