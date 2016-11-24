@@ -1,13 +1,9 @@
 ---
 layout: post 
 cat: “science physics” 
-**title: “HEALTHY FATS FOR A LONGER LIFE”** 
+title: “HEALTHY FATS FOR A LONGER LIFE”
 img: “/assets/healthy_header.jpeg” 
 ---
-
-
-
-
 Good fats are so good, right? Tasty, rich and satisfying, and they help absorption of certain nutrients, boost brain function, maintain a healthy heart, are essential for hormone production, and may assist with weight loss and improving markers associated with type 2 diabetes.
 
 And enjoying a regular dollop of healthy fats may help us live longer, according to research out of Harvard T.H. Chan School of Public Health.
