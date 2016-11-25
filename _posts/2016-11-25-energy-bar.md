@@ -4,8 +4,6 @@ cat: "design"
 title: "No-Bake Cranberry Almond Energy Bars" 
 img: "/assets/cranberry.jpg"
 ---
-BY KATHRYN PFEFFER, MS, RD
-
 With tons of quick and easy energy bar recipes out there, the options are endless. Nourishing bars that give energy and save you money from the processed versions? Sign me up! 
 
 These bars are so versatile and easy, and they give you no excuse for skipping breakfast. They include sunflower seed butter and dried cranberries, but you can substitute any nut or seed butter and other dried fruits like apricots or raisins. Just make sure the nut or seed butter is unsalted and the dried fruit is unsweetened — who needs the extra salt and sugar? 

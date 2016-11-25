@@ -4,13 +4,8 @@ cat: "nutrition"
 title: "7 Proven Health Benefits of Dark Chocolate" 
 img: "/assets/.jpeg" 
 ---
-By Kris Gunnars, BSc | 2,036,337  views
-
-Dark chocolate is loaded with nutrients that can positively affect your health.
-
-Made from the seed of the cocoa tree, it is one of the best sources of antioxidants on the planet.
-
-Studies show that dark chocolate (not the sugary crap) can improve health and lower the risk of heart disease.
+<!-- By Kris Gunnars, BSc | 2,036,337  views -->
+Dark chocolate is loaded with nutrients that can positively affect your health. Made from the seed of the cocoa tree, it is one of the best sources of antioxidants on the planet. Studies show that dark chocolate (not the sugary crap) can improve health and lower the risk of heart disease.
 
 1. Dark Chocolate is Very Nutritious
 ------------------------------------

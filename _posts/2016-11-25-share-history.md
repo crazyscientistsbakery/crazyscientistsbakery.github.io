@@ -4,8 +4,6 @@ cat: "world"
 title: "Share Family History With Your Kids in the Kitchen" 
 img: "/assets/family_cooking_together.jpg"
 ---
-BY JEN HAUGEN, RDN, LD
-
 How do you celebrate your family’s roots? Most people would say with food, of course! All of our family celebrations seem to include food, and there can never be too many cooks in the kitchen, especially when we are trying to pass down traditions to our children. Fascinating research featured in the book The Secrets of Happy Families shows that kids who know a lot about their families tend to do better when they face life challenges. And learning family history can be shared while preparing traditional recipes or at the family dinner table through conversation. 
 
 Answers to questions like:

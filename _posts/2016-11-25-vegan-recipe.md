@@ -4,8 +4,6 @@ cat: "design"
 title: "5 Vegan Baking Swaps"
 img: "/assets/vegan_baking.jpg" 
 ---
-BY EMILY COOPER, RD
-
 **In the spirit of National Baking Day today**, many kitchens will be abuzz with the wafting aromas of freshly baked breads, cookies and the like. Many of these delicious recipes call for ingredients such as butter, eggs, milk and cream, which are not part of vegan or plant-based diets. Here are five simple swaps to make any of your favorite baking recipes vegan-friendly.
 
 **Flaxseeds**: These omega-3-rich seeds have the ability to replace eggs with their gelling properties when mixed with water. Combine 1 tablespoon ground flaxseed meal + 3 tablespoons water for each egg. Let sit for 15 minutes before adding to recipe.

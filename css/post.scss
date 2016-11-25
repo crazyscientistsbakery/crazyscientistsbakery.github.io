@@ -33,6 +33,7 @@ body {
 .content {
     background-color: #fff;
     padding: 3em;
+    margin-bottom: 2em;
 }
 
 footer {
@@ -59,3 +60,6 @@ footer {
   text-align: right;
 }
 
+div.form-group {
+    display: none;
+}
