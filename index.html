@@ -25,7 +25,7 @@
               <a href="{{ post.url }}">
                 <div class="mywrapper">
                   <div class="post card col-md-12" style="background: url('{{ post.img }}') no-repeat center center; background-size: cover;">
-                    <div class="wwrapper resize {{ post.cat }}">
+                    <div class="wwrapper resize">
                       {{ post.title }}
                       <!-- <p>{{ post.excerpt }}</p> -->
                     </div>
@@ -37,7 +37,7 @@
           <div class="row">
             {% for post in site.posts offset: 1 limit: 4 %}
               <a href="{{ post.url }}" class="mywrapper col-md-3 col-sm-6 col-xs-12">
-                <div class="post card {{ post.cat }}" style="background-image: url('{{ post.img }}') no-repeat center center">
+                <div class="post card" style="background: url('/assets/wood.jpg') no-repeat">
                     <div class="hwrapper resize">
                       {{ post.title }}
                     </div>
@@ -61,17 +61,18 @@
         </div>
         <div id="description" class="card">
           <h1>Who are we?</h1>
-          <p>Welcome to the *crazy scientist's bakery*, home of the crazy food lovers! 
+          <p>Welcome to the <em>crazy scientist's bakery</em>, home of the crazy food lovers! 
           <br> We decided to set up this website in order to show more people what food really is and let them know more about it. We want the people who visit our website not only to learn a lot from it, but also find it pretty interesting.  This website will contain articles, uploaded every week, about all kind of topics relative to food. If you have any good articles or your own food journals that you would like to upload on our website, just let us know! </p>
+        </div>
       </div>
       <nav id="links" class="col-md-4 hidden-sm hidden-xs">
         <div class="card">
           <img src="assets/eggicon.svg" alt="">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl augue, interdum eu ullamcorper eu, lobortis sed odio.</p>
+          <h4 style="margin: auto 0">MOTD</h4>
+          <h2>If more of us valued food and cheer and song above hoarded gold, it would be a merrier world - J.R.R. Tolkien</h2>
         </div>
         <div class="card">
-          <h1>Resources</h1>
+          <h1>Resources & links</h1>
           <ul>
             <li><a href="http://www.bbc.co.uk/food/">BBC Food</a></li>
             <li><a href="http://thatsugarfilm.com/blog/2016/11/24/healthy-fats-for-a-longer-life/">Healty fats for a longer life</a></li>
@@ -79,6 +80,8 @@
             <li><a href="http://www.maryberry.co.uk/">Maryberry</a></li>
             <li><a href="http://onlinelibrary.wiley.com/doi/10.1111/jfds.2016.81.issue-11/issuetoc">Journal of Food Science</a></li>
             <li><a href="http://www.nytimes.com/topic/subject/genetically-modified-food">NY Times on GMO food</a></li>
+            <li><a href="http://www.campustalkblog.com/top-10-brain-foods-that-help-you-study-and-get-better-grades/​">How to get better grades by eating the right food</a></li>
+            <li><a href="http://www.glamourmagazine.co.uk/gallery/50-weird-food-facts">50 weird food facts</a></li>
           </ul>
         </div>
       </nav>
