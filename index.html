@@ -24,16 +24,18 @@
             {% for post in site.posts offset: 0 limit: 1 %}
               <a href="{{ post.url }}">
                 <div class="mywrapper">
-                  <div class="post card col-md-12" style="background: url('{{ post.img }}') no-repeat center center">
-                  <h1>{{ post.title }}</h1>
-                  <p>{{ post.excerpt }}</p>
+                  <div class="post card col-md-12" style="background: url('{{ post.img }}') no-repeat center center; background-size: cover;">
+                    <div class="wrapper">
+                      <h1>{{ post.title }}</h1>
+                      <p>{{ post.excerpt }}</p>
+                    </div>
                   </div>
                 </div>
               </a>
             {% endfor %}
           </div>
           <div class="row">
-            {% for post in site.posts offset: 0 limit: 4 %}
+            {% for post in site.posts offset: 1 limit: 4 %}
               <a href="{{ post.url }}" class="mywrapper col-md-3 col-sm-6 col-xs-12">
                   <div class="post card" style="background-image: url('{{ post.img }}') no-repeat center center">
                     <div class="hwrapper resize">
@@ -91,6 +93,6 @@
       </nav>
     </div>
   </div>
-  {% include footer.html %}
+  <!-- {% include footer.html %} -->
 </body>
 </html>
