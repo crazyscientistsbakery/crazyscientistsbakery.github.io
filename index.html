@@ -25,9 +25,9 @@
               <a href="{{ post.url }}">
                 <div class="mywrapper">
                   <div class="post card col-md-12" style="background: url('{{ post.img }}') no-repeat center center; background-size: cover;">
-                    <div class="wrapper">
-                      <h1>{{ post.title }}</h1>
-                      <p>{{ post.excerpt }}</p>
+                    <div class="wwrapper resize {{ post.cat }}">
+                      {{ post.title }}
+                      <!-- <p>{{ post.excerpt }}</p> -->
                     </div>
                   </div>
                 </div>
@@ -37,7 +37,7 @@
           <div class="row">
             {% for post in site.posts offset: 1 limit: 4 %}
               <a href="{{ post.url }}" class="mywrapper col-md-3 col-sm-6 col-xs-12">
-                  <div class="post card" style="background-image: url('{{ post.img }}') no-repeat center center">
+                <div class="post card {{ post.cat }}" style="background-image: url('{{ post.img }}') no-repeat center center">
                     <div class="hwrapper resize">
                       {{ post.title }}
                     </div>
@@ -60,18 +60,9 @@
           </div>
         </div>
         <div id="description" class="card">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl augue, interdum eu ullamcorper eu, lobortis sed odio. Nam a ultrices sapien. Mauris tempus massa nec tincidunt molestie. Cras gravida luctus purus et pulvinar. Proin interdum ac ligula sit amet blandit. Morbi vitae tempor neque, non blandit eros. Proin nisl odio, eleifend vel ornare sit amet, fermentum laoreet odio. Ut pellentesque mi nisi, eget hendrerit felis laoreet dapibus. Suspendisse potenti. Aliquam elementum sapien turpis, volutpat elementum dolor ultricies sit amet. Curabitur faucibus neque sed sagittis gravida. In quis venenatis turpis, ut semper nibh. Maecenas lectus neque, tincidunt ut elit in, rhoncus vestibulum eros. Aenean posuere lectus quis nisl elementum, a sagittis nisl mollis. Ut lacus ex, mattis at facilisis at, semper nec purus. Nam elementum, nulla at mattis rhoncus, nisl lacus ultricies est, hendrerit hendrerit enim nunc quis dolor.</p>
-
-          <h1>Lorem Ipsum</h1>
-          <p>Morbi sagittis auctor tortor a suscipit. Fusce in sem et turpis congue facilisis ac non nulla. Cras pharetra, lorem quis consectetur egestas, urna elit interdum sem, eu feugiat metus lorem eget est. Phasellus porta consectetur elit, id vulputate orci porta vel. Aenean sodales ultricies eros. Aliquam purus mauris, pulvinar quis luctus vel, dictum ac mauris. Duis dapibus vulputate ornare. Donec metus velit, efficitur et iaculis ut, fringilla quis mauris. Suspendisse laoreet quis nunc sed iaculis.</p>
-
-          <h1>Lorem Ipsum</h1>
-          <p>Nullam vel leo mi. Vestibulum tortor mauris, elementum eget ultricies vel, porta non libero. Suspendisse finibus dui quis consectetur eleifend. Donec fringilla ornare nisi at egestas. Nunc id pulvinar erat, a semper enim. Vestibulum ornare ante quam, et viverra eros fringilla at. Aenean hendrerit urna vitae leo faucibus convallis. Nam pretium eu purus id tincidunt. Praesent consectetur molestie metus, vitae bibendum elit auctor eget.</p>
-
-          <h1>Lorem Ipsum</h1>
-          <p>Proin et aliquet arcu. Phasellus ipsum arcu, hendrerit nec pharetra et, blandit a velit. Sed pellentesque diam sapien, sed vulputate ligula porta in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla at dictum libero. Maecenas non gravida purus. Quisque sit amet justo iaculis orci finibus faucibus in et tellus. Maecenas interdum, neque a suscipit dictum, mauris felis efficitur neque, quis pharetra lectus justo non lacus.</p>
-        </div>
+          <h1>Who are we?</h1>
+          <p>Welcome to the *crazy scientist's bakery*, home of the crazy food lovers! 
+          <br> We decided to set up this website in order to show more people what food really is and let them know more about it. We want the people who visit our website not only to learn a lot from it, but also find it pretty interesting.  This website will contain articles, uploaded every week, about all kind of topics relative to food. If you have any good articles or your own food journals that you would like to upload on our website, just let us know! </p>
       </div>
       <nav id="links" class="col-md-4 hidden-sm hidden-xs">
         <div class="card">

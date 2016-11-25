@@ -2,7 +2,7 @@
 layout: post 
 cat: "nutrition" 
 title: "7 Proven Health Benefits of Dark Chocolate" 
-img: "/assets/dessert and health_header.jpeg" 
+img: "/assets/.jpeg" 
 ---
 By Kris Gunnars, BSc | 2,036,337  views
 

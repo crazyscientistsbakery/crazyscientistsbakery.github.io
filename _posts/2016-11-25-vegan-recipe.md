@@ -2,7 +2,7 @@
 layout: post 
 cat: "design" 
 title: "5 Vegan Baking Swaps"
-img: "/assets/recipe_header.jpeg" 
+img: "/assets/vegan_baking.jpg" 
 ---
 BY EMILY COOPER, RD
 

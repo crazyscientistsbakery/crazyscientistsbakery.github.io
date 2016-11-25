@@ -3,7 +3,6 @@
 @import "circle";
 @import "main";
 @import 'https://fonts.googleapis.com/css?family=Lobster|Lato:900';
-
 a {
     color: white;
 }
@@ -219,9 +218,30 @@ body {
             .mywrapper  {
                 position: relative;
                 padding-bottom: 52%;
+
+                div.wwrapper  {
+                    position: absolute;
+                    // height: 30%;
+                    width: 100%;
+                    bottom: 0;
+                    padding-bottom: 1em;
+                    // left: -0.5em;
+                    left: 0em;
+                    right: 0;
+                    margin: 0;
+                    box-shadow: 0 0 30px 0px  #222;   
+                    max-height: 30%;
+
+                    font-size: 6em;
+                    text-align: center;
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
+
+                }
             }
 
             .post {
+
                 margin: 0;
             }
         }
@@ -242,7 +262,7 @@ body {
             }
         }
         .post {
-            background-color: #fff;
+            // background-color: #fff;
             color: black;
             position: absolute;
             top: 0;
